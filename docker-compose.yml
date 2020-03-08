@@ -1,0 +1,12 @@
+version: "1.0"
+
+services:
+  gallery:
+    build:
+      context: ./
+    image: gallery:latest
+    restart: always;
+    container_name: gallery
+    ports:
+      - 3000:3000
+
